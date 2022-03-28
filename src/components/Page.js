@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './[PageStyles.css'
+import './PageStyles.css'
 import Lottie from "react-lottie";
 import animationData from '../badge.json'
 
