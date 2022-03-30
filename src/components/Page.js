@@ -22,10 +22,9 @@ const Anime = () => {
          <Lottie options={defaultOptions} alt="ribbon" width={240} height={240} />
       </div>
                 <h1>Congratulations!</h1>
-                <p>You finished the study. If you had any problem, please leave feedback.</p>
+                <p>You have successfully verified your email. Click button below to login.</p>
                 <div>
-                    <Link to='/training' className='btn'>All Set</Link>
-                    <Link to='/contact' className='btn btn-light'>Feedback</Link>
+                    <Link to='https://khumla.com/login' className='btn'><button>Login</button></Link>
                 </div>
             </div>
         </div>
