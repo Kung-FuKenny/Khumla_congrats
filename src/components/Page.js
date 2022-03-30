@@ -14,6 +14,9 @@ const Anime = () => {
         }
       };
 
+      function openTab() {
+        window.open('https://www.khumla.com/login');
+      }
     
     return (
         <div className='hero'>
@@ -24,7 +27,9 @@ const Anime = () => {
                 <h1>Congratulations!</h1>
                 <p>You have successfully verified your email. Click button below to login.</p>
                 <div>
-                    <Link to='https://khumla.com/login' className='btn'><button>Login</button></Link>
+                <button btnClass={"btn"} onClick={openTab.bind(this)} >
+                Login
+              </button>
                 </div>
             </div>
         </div>
@@ -32,3 +37,5 @@ const Anime = () => {
 }
 
 export default Anime
+
+//   <Link onClick={openTab}></Link>

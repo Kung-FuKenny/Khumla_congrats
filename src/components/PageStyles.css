@@ -1,4 +1,3 @@
-
 #video {
     position: fixed;
     width: 100%;
@@ -26,14 +25,21 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    }
-    
-    
+}
+
+
 .hero .content h1 {
     font-size: 3rem;
     text-shadow: 1px 3px 3px #342b857c;
     color: #fff;
+    animation: color-change 2.5s infinite;
 }
+
+@keyframes color-change {
+    0% { color: white;; }
+    50% { color: #7bffbf; }
+    100% { color: #01ff85; }
+  }
 
 .hero p {
     font-size: 1.2rem;
@@ -42,16 +48,32 @@
     color: #fff;
 }
 
-.hero .btn {
-    margin: 1rem .2rem;
-    border-radius: 12px;
+.hero button {
+    /* margin: 1rem .2rem; */
+    border-radius: 10%;
+    display: block;
+    margin: 2rem auto;
+    padding: 5px 8px;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 22px;
+    text-align: center;
+    background: #01ff85;
+    color: #014569;
+    height: 3.2rem;
+    width: 6rem;
+}
+
+.hero button:hover {
+    background: #014569;
+    color: #01ff85;
 }
 
 @media screen and (max-width:640px) {
     .content {
         flex-direction: column;
-      }
-    
+    }
+
     .content h1 {
         font-size: 100%;
     }
@@ -61,14 +83,3 @@
         margin-bottom: 1.6rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
